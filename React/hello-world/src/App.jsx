@@ -13,13 +13,22 @@ import { Greeting } from './Greeting'
 import { CardWrapper } from './CardWrapper'
 import { UserInfo } from './UserInfo'
 import { UserDetails } from './UseDetails'
+import { ProductList } from './ProductList'
+import { NameList } from './NameList'
+import { Alert } from './Alert'
+import { NewButton } from './NewButton'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
       
-      {/* <h1>Code evolution react crash course</h1> */}
+      {/* <h1 Code evolution react crash course</h1> */}
+      <Alert>Your changes have been saved!!</Alert>
+      <Alert type= "error">Something went wrong!!</Alert>
+      <NewButton/>
+      <NameList/>
+      <ProductList/>
       <UserDetails name="Bruce Wayne" isOnline={true}  hideOffline={true} isNewUser={true} isPremium={true} role="admin"/>
       <UserDetails name="Clark " isOnline={false} hideOffline={false} isNewUser={true} role="vip"/>
       <CardWrapper title = "User Profile">
