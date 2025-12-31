@@ -20,6 +20,7 @@ import { NewButton } from './NewButton'
 import { CustomButton } from './CustomButton'
 import { Contact } from './Contact'
 import { NewsLetter } from './NewsLetter'
+import { Menu } from './Menu'
 
 
 
@@ -27,6 +28,7 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
+      <Menu />
       <Contact />
       <NewsLetter />
       <CustomButton text="Like"/>
