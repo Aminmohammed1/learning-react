@@ -2,7 +2,7 @@ export const CustomButton = ({text}) => {
     const name = "CodeVolution";
 
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         // console.log("Which component was clicked ..", e.target)
         // console.log("Click coordinates .. ", e.clientX,e.clientY)
         // console.log("button was clicked", e.button)

@@ -18,11 +18,17 @@ import { NameList } from './NameList'
 import { Alert } from './Alert'
 import { NewButton } from './NewButton'
 import { CustomButton } from './CustomButton'
+import { Contact } from './Contact'
+import { NewsLetter } from './NewsLetter'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
+      <Contact />
+      <NewsLetter />
       <CustomButton text="Like"/>
       <CustomButton text="Subscribe"/>
       
