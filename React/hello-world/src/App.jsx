@@ -17,11 +17,14 @@ import { ProductList } from './ProductList'
 import { NameList } from './NameList'
 import { Alert } from './Alert'
 import { NewButton } from './NewButton'
+import { CustomButton } from './CustomButton'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
+      <CustomButton text="Like"/>
+      <CustomButton text="Subscribe"/>
       
       {/* <h1 Code evolution react crash course</h1> */}
       <Alert>Your changes have been saved!!</Alert>
