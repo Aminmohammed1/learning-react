@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Counter } from './Counter'
 import { LoginCard } from './LoginCard'
+import { SimpleCounter } from './SimpleCounter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <h1>CodeVolution</h1>
       <Counter/>
       <Counter/>
+      <SimpleCounter/>
       <LoginCard/>
     </>
   )

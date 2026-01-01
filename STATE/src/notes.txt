@@ -1,0 +1,11 @@
+
+
+
+
+
+
+How the state update works...
+Updating the UI is a 3-phase process:
+    -the trigger phase -> this happens the moment useState hook is called..the component is stored in list of components to be re-run.
+    -the render phase -> calls the component function again.. and figure out which parts need to be updated.
+    -the commit phase -> changes from render phase is taken and applied to commit phase.
