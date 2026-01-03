@@ -7,6 +7,7 @@ import { LoginCard } from './LoginCard'
 import { SimpleCounter } from './SimpleCounter'
 import { PreviousStateCounter } from './PreviousStateCounter'
 import { BatchingState } from './BatchingState'
+import { UserProfile } from './UserProfile'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,9 +18,12 @@ function App() {
       <Counter/>
       <Counter/>
       {/* <SimpleCounter/> */}
+      <UserProfile/>
       <PreviousStateCounter/>
       <BatchingState/>
+
       <LoginCard/>
+
     </>
   )
 }
