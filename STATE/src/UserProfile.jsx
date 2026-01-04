@@ -31,10 +31,11 @@ export const UserProfile = () => {
             ...user,
             address:{
                 ...user.address,
-                city: "New City"
+                city:"Gotham City",
+                country:"CANADA"
             }
-        });
-            }
+    })
+}
 
     return (
         <>

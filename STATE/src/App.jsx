@@ -8,6 +8,7 @@ import { SimpleCounter } from './SimpleCounter'
 import { PreviousStateCounter } from './PreviousStateCounter'
 import { BatchingState } from './BatchingState'
 import { UserProfile } from './UserProfile'
+import { TodoList } from './TodoList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,14 +16,15 @@ function App() {
   return (
     <>
       <h1>CodeVolution</h1>
+      {/* <Counter/>
       <Counter/>
-      <Counter/>
-      {/* <SimpleCounter/> */}
+      <SimpleCounter/>
       <UserProfile/>
       <PreviousStateCounter/>
       <BatchingState/>
 
-      <LoginCard/>
+      <LoginCard/> */}
+      <TodoList/>
 
     </>
   )
