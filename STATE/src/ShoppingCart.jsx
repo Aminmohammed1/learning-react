@@ -13,12 +13,16 @@ export const ShoppingCart = () => {
     })
 
     const handleReactAddToCart = () => {
-        console.log("react items...", cartItems.reactCourse)
-        setCartItems({...cartItems, reactCourse: cartItems.reactCourse + 1})        
+        if(cartItems.reactCourse < 5) {
+            console.log("react items...", cartItems.reactCourse)
+            setCartItems({...cartItems, reactCourse: cartItems.reactCourse + 1})        
+        }
     }
 
     const handleVueAddToCart = () => {
-        setCartItems({...cartItems, vueCourse: cartItems.vueCourse + 1})
+        if(cartItems.vueCourse < 5){
+            setCartItems({...cartItems, vueCourse: cartItems.vueCourse + 1})
+        }
     }
 
     return (
