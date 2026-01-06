@@ -9,6 +9,7 @@ import { PreviousStateCounter } from './PreviousStateCounter'
 import { BatchingState } from './BatchingState'
 import { UserProfile } from './UserProfile'
 import { TodoList } from './TodoList'
+import { ShoppingCart } from './ShoppingCart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,8 +25,9 @@ function App() {
       <BatchingState/>
 
       <LoginCard/> */}
-      <TodoList/>
+      {/* <TodoList/> */}
 
+        <ShoppingCart />
     </>
   )
 }
