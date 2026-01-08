@@ -10,6 +10,7 @@ import { BatchingState } from './BatchingState'
 import { UserProfile } from './UserProfile'
 import { TodoList } from './TodoList'
 import { ShoppingCart } from './ShoppingCart'
+import { CounterWithReducer } from './CounterWithReducers'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,7 +28,8 @@ function App() {
       <LoginCard/> */}
       {/* <TodoList/> */}
 
-        <ShoppingCart />
+        {/* <ShoppingCart /> */}
+        <CounterWithReducer/>
     </>
   )
 }

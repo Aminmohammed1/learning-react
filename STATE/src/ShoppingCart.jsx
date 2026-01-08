@@ -69,6 +69,7 @@ export const ShoppingCart = () => {
     })
 
     const handleRAddToCart = () => {
+        if(quantity.reactCourse <5){
         return (
             setQuantity({
                 ...quantity,
@@ -76,14 +77,18 @@ export const ShoppingCart = () => {
             })
         )
     }
+    }
 
     const handleVAddToCart = () => {
-        return (
-            setQuantity({
-                ...quantity,
-                vueCourse: quantity.vueCourse+1
-            })
-        )
+        if(quantity.vueCourse <5){
+
+            return (
+                setQuantity({
+                    ...quantity,
+                    vueCourse: quantity.vueCourse+1
+                })
+            )
+        }
     }
 
     
